@@ -1,0 +1,74 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org/"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Resterland/resterland_bootstrap.git"
+    }
+  ],
+
+  "name": "resterland/resterland-bootstrap",
+  "type": "typo3-cms-extension",
+  "description": "",
+  "license": ["GPL-2.0-or-later"],
+  "keywords": [
+    "TYPO3 CMS",
+    "bootstrap",
+    "responsive"
+  ],
+  "authors": [
+    {
+      "name": "Roland Fuhrer",
+      "email": "roland@resterland.ch",
+      "homepage": "https://resterland.ch",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "helhum/typo3-secure-web": "^0.2",
+    "helhum/typo3-console": "^5.7",
+    "typo3/cms-core": "^9.5",
+    "typo3/cms-rte-ckeditor": "^9.5",
+    "typo3/cms-fluid-styled-content": "^9.5",
+    "causal/image_autoresize": "^1.9"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "friendsofphp/php-cs-fixer": "^2.0",
+    "typo3/testing-framework": "^4.11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Resterland\\ResterlandBootstrap\\": "Classes/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Resterland\\ResterlandBootstrap\\Tests\\": "Tests"
+    }
+  },
+  "replace": {
+    "resterland/resterland-bootstrap": "self.version",
+    "typo3-ter/resterland-bootstrap": "self.version"
+  },
+  "config": {
+    "platform": {
+      "php": "7.2"
+    },
+    "optimize-autoloader": true
+  },
+  "scripts": {
+    "set-version": [
+      "Resterland\\ResterlandBootstrap\\Composer\\VersionScript::setVersion"
+    ]
+  },
+  "extra": {
+    "typo3/cms": {
+      "root-dir": "private",
+      "web-dir": "public"
+    }
+  }
+}
