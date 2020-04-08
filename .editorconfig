@@ -12,17 +12,17 @@ trim_trailing_whitespace = true
 
 # CSS-Files
 [*.css]
-indent_style = tab
+indent_style = space
 indent_size = 4
 
 # HTML-Files
 [*.html]
-indent_style = tab
-indent_size = 2
+indent_style = space
+indent_size = 4
 
 # TMPL-Files
 [*.tmpl]
-indent_style = tab
+indent_style = space
 indent_size = 4
 
 # SCSS-Files
@@ -36,11 +36,11 @@ indent_style = space
 indent_size = 2
 [*.js]
 indent_style = space
-indent_size = 2
+indent_size = 4
 
 # JSON-Files
 [*.json]
-indent_style = tab
+indent_style = space
 indent_size = 4
 
 # PHP-Files
@@ -64,23 +64,24 @@ indent_style = space
 indent_size = 2
 
 # package.json
+# composer.json
 # .travis.yml
 # bower.json
-[{package.json,.travis.yml,bower.json}]
+[{package.json,composer.json,.travis.yml,bower.json}]
 indent_style = space
 indent_size = 2
 
 # TypoScript
 [*.typoscript]
 indent_style = space
-indent_size = 2
+indent_size = 4
 [*.tsconfig]
 indent_style = space
-indent_size = 2
+indent_size = 4
 
 # XLF-Files
 [*.xlf]
-indent_style = tab
+indent_style = space
 indent_size = 4
 
 # SQL-Files

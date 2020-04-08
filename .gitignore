@@ -8,6 +8,9 @@
 # For local exclude patterns please edit .git/info/exclude.
 #
 ########################
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+*.[oa]
 #
 # Ignore temporary files (left by editors and OS)
 *~
