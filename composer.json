@@ -34,7 +34,8 @@
     "typo3/cms-rte-ckeditor": "^9.5",
     "typo3/cms-fluid-styled-content": "^9.5",
     "causal/image_autoresize": "^1.9",
-    "gridelementsteam/gridelements": "^9.5"
+    "gridelementsteam/gridelements": "^9.5",
+    "svewap/ws-scss": "^1.1"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",
