@@ -12,9 +12,7 @@ $EM_CONF[$_EXTKEY] = [
             'typo3' => '9.5.0-9.5.99',
             'fluid_styled_content' => '9.5.0-9.5.99',
             'rte_ckeditor' => '9.5.0-9.5.99',
-            'gridelements' => '9.3.0-9.99.99',
-            'ws_scss' => '1.1.12-1.99.99',
-            't3sbootstrap' => '4.4.3-4.9.99'
+            'gridelements' => '9.3.0-9.99.99'
         ],
         'conflicts' => [
         ],
@@ -25,7 +23,7 @@ $EM_CONF[$_EXTKEY] = [
         ],
     ],
     'state' => 'beta',
-    'version' => '1.0.0',
+    'version' => '1.0.1',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
