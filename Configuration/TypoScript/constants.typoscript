@@ -30,12 +30,12 @@ page {
         templateRootPath = EXT:resterland_bootstrap/Resources/Private/Templates/Page/
     }
     meta {
-        description =
-        author =
-        keywords =
         viewport = width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no
         robots = index,follow
         apple-mobile-web-app-capable = no
+        description =
+        author =
+        keywords =
         compatible = IE=edge
         google = notranslate
         google-site-verification =
@@ -47,7 +47,6 @@ page {
         }
     }
 }
-
 
 ##############
 ### CONFIG ###

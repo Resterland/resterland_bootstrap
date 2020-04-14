@@ -11,8 +11,7 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '9.5.0-9.5.99',
             'fluid_styled_content' => '9.5.0-9.5.99',
-            'rte_ckeditor' => '9.5.0-9.5.99',
-            'gridelements' => '9.3.0-9.99.99'
+            'rte_ckeditor' => '9.5.0-9.5.99'
         ],
         'conflicts' => [
         ],
