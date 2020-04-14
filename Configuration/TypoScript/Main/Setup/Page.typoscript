@@ -1,0 +1,8 @@
+##############
+#### PAGE ####
+##############
+page = PAGE
+page {
+    typeNum = 0
+    shortcutIcon = EXT:resterland_bootstrap/Resources/Public/Icons/{$page.favicon.switch}/favicon.ico
+}

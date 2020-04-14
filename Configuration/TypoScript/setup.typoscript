@@ -2,22 +2,15 @@
 #### DEPENDENCIES ####
 ######################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3sbootstrap/Configuration/TypoScript/setup.typoscript">
-
-
-##############
-#### PAGE ####
-##############
-page = PAGE
-page {
-    typeNum = 0
-    shortcutIcon = EXT:resterland_bootstrap/Resources/Public/Icons/favicon.ico
-}
-
 
 ################
-#### CONFIG ####
+#### HELPER ####
 ################
-config {
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TypoScript/Helper/DynamicContent.typoscript">
 
-}
+#######################
+#### MAIN SETTINGS ####
+#######################
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TypoScript/Main/Setup/Page.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TypoScript/Main/Setup/Config.typoscript">
