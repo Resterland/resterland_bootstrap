@@ -1,16 +1,36 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
 
-################
-#### HELPER ####
-################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TypoScript/Helper/DynamicContent.typoscript">
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+        theme = EXT:resterland_bootstrap/Resources/Public/Scss/Theme/theme.scss
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        resterland_bootstrap_scripts = EXT:resterland_bootstrap/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
 
 #######################
 #### MAIN SETTINGS ####
 #######################
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TypoScript/Main/Setup/Page.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TypoScript/Main/Setup/Config.typoscript">
+##<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TypoScript/Main/Setup/Page.typoscript">
+##<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TypoScript/Main/Setup/Config.typoscript">

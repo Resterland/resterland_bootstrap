@@ -3,23 +3,18 @@
 ######################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
 
-
-##############################
-#### FLUID STYLED CONTENT ####
-##############################
-styles {
-    templates {
-        layoutRootPath = EXT:resterland_bootstrap/Resources/Private/Layouts/ContentElements/
-        partialRootPath = EXT:resterland_bootstrap/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:resterland_bootstrap/Resources/Private/Templates/ContentElements/
-    }
-}
-
-
 ############
 ### PAGE ###
 ############
 page {
+    logo {
+        file = EXT:resterland_bootstrap/Resources/Public/Images/logo.svg
+        fileInverted = EXT:resterland_bootstrap/Resources/Public/Images/logo-inverted.svg
+        height = 52
+        width = 192
+        alt = Resterland Bootstrap
+        linktitle = Resterland Bootstrap
+    }
     favicon {
         # cat=Resterland Settings: layout/111/100; type=options[Default=Default, Resterland=Resterland, Bali Entdecken=Balientdecken, Flores Entdecken=Floresentdecken, Pancasila=Indonesienentdecken, Roesten=Roesten, VPT MOB=Vptmob]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.favicon.switch
         switch = Default
@@ -29,33 +24,23 @@ page {
         partialRootPath = EXT:resterland_bootstrap/Resources/Private/Partials/Page/
         templateRootPath = EXT:resterland_bootstrap/Resources/Private/Templates/Page/
     }
-    meta {
-        viewport = width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no
-        robots = index,follow
-        apple-mobile-web-app-capable = no
-        description =
-        author =
-        keywords =
-        compatible = IE=edge
-        google = notranslate
-        google-site-verification =
-    }
-    tracking {
-        google {
-            trackingID =
-            anonymizeIp = 1
-        }
+}
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:resterland_bootstrap/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:resterland_bootstrap/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:resterland_bootstrap/Resources/Private/Templates/ContentElements/
     }
 }
 
-##############
-### CONFIG ###
-##############
-config {
-    no_cache = 0
-    removeDefaultJS = 0
-    admPanel = 0
-    prefixLocalAnchors = all
-    headerComment = build by ResterLand WebAtelier
-    sendCacheHeaders = 1
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+plugin.bootstrap_package.settings.scss {
+    primary = #eb3e4a
+    secondary = #013859
 }

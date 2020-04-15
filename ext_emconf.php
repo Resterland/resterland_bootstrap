@@ -5,13 +5,11 @@
  */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Resterland Bootstrap',
-    'description' => '',
+    'description' => 'Extends the TYPO3 introduction bootstrap package by Benjamin Kott (https://github.com/benjaminkott/bootstrap_package).',
     'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-9.5.99',
-            'fluid_styled_content' => '9.5.0-9.5.99',
-            'rte_ckeditor' => '9.5.0-9.5.99'
+            'bootstrap_package' => '10.0.0-11.0.99',
         ],
         'conflicts' => [
         ],
