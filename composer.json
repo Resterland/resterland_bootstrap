@@ -33,7 +33,8 @@
     "helhum/typo3-console": "^5.7",
     "typo3/cms-core": "^9.5",
     "bk2k/bootstrap-package": "^10.0 || ^11.0",
-    "causal/image_autoresize": "^1.9"
+    "causal/image_autoresize": "^1.9",
+    "resterland/webatelier": "^3.5"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",
