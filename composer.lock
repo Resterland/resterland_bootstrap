@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33781c36f8889e10127738bd43d1f894",
+    "content-hash": "23e0c152541ec46a5d6a7373435cf6c9",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -261,16 +261,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.10.1",
+            "version": "1.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "5eb79f3dbdffed6544e1fc287572c0f462bd29bb"
+                "reference": "b9d758e831c70751155c698c2f7df4665314a1cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5eb79f3dbdffed6544e1fc287572c0f462bd29bb",
-                "reference": "5eb79f3dbdffed6544e1fc287572c0f462bd29bb",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/b9d758e831c70751155c698c2f7df4665314a1cb",
+                "reference": "b9d758e831c70751155c698c2f7df4665314a1cb",
                 "shasum": ""
             },
             "require": {
@@ -326,7 +326,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2020-04-02T12:33:25+00:00"
+            "time": "2020-04-20T09:18:32+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -412,16 +412,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.10.1",
+            "version": "2.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "c2b8e6e82732a64ecde1cddf9e1e06cb8556e3d8"
+                "reference": "aab745e7b6b2de3b47019da81e7225e14dcfdac8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/c2b8e6e82732a64ecde1cddf9e1e06cb8556e3d8",
-                "reference": "c2b8e6e82732a64ecde1cddf9e1e06cb8556e3d8",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/aab745e7b6b2de3b47019da81e7225e14dcfdac8",
+                "reference": "aab745e7b6b2de3b47019da81e7225e14dcfdac8",
                 "shasum": ""
             },
             "require": {
@@ -433,9 +433,11 @@
             "require-dev": {
                 "doctrine/coding-standard": "^6.0",
                 "jetbrains/phpstorm-stubs": "^2019.1",
-                "phpstan/phpstan": "^0.11.3",
+                "nikic/php-parser": "^4.4",
+                "phpstan/phpstan": "^0.12",
                 "phpunit/phpunit": "^8.4.1",
-                "symfony/console": "^2.0.5|^3.0|^4.0|^5.0"
+                "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
+                "vimeo/psalm": "^3.11"
             },
             "suggest": {
                 "symfony/console": "For helpful console commands such as SQL execution and import of files."
@@ -500,7 +502,7 @@
                 "sqlserver",
                 "sqlsrv"
             ],
-            "time": "2020-01-04T12:56:21+00:00"
+            "time": "2020-04-20T17:19:26+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -698,23 +700,24 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.5.2",
+            "version": "6.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "43ece0e75098b7ecd8d13918293029e555a50f82"
+                "reference": "aab4ebd862aa7d04f01a4b51849d657db56d882e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/43ece0e75098b7ecd8d13918293029e555a50f82",
-                "reference": "43ece0e75098b7ecd8d13918293029e555a50f82",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/aab4ebd862aa7d04f01a4b51849d657db56d882e",
+                "reference": "aab4ebd862aa7d04f01a4b51849d657db56d882e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/promises": "^1.0",
                 "guzzlehttp/psr7": "^1.6.1",
-                "php": ">=5.5"
+                "php": ">=5.5",
+                "symfony/polyfill-intl-idn": "^1.11"
             },
             "require-dev": {
                 "ext-curl": "*",
@@ -722,7 +725,6 @@
                 "psr/log": "^1.1"
             },
             "suggest": {
-                "ext-intl": "Required for Internationalized Domain Name (IDN) support",
                 "psr/log": "Required for using the Log middleware"
             },
             "type": "library",
@@ -761,7 +763,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2019-12-23T11:57:10+00:00"
+            "time": "2020-04-18T10:38:46+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -3131,6 +3133,68 @@
             "time": "2020-03-29T16:12:26+00:00"
         },
         {
+            "name": "typo3/cms-adminpanel",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/adminpanel.git",
+                "reference": "1908299c0ea2a74bf1e0902f0f6d7640b48ab5f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/adminpanel/zipball/1908299c0ea2a74bf1e0902f0f6d7640b48ab5f5",
+                "reference": "1908299c0ea2a74bf1e0902f0f6d7640b48ab5f5",
+                "shasum": ""
+            },
+            "require": {
+                "psr/http-message": "~1.0",
+                "psr/http-server-handler": "^1.0",
+                "psr/http-server-middleware": "^1.0",
+                "typo3/cms-backend": "9.5.15",
+                "typo3/cms-core": "9.5.15",
+                "typo3/cms-fluid": "9.5.15",
+                "typo3/cms-frontend": "9.5.15",
+                "typo3fluid/fluid": "^2.6.8"
+            },
+            "conflict": {
+                "typo3/cms": "*",
+                "typo3fluid/fluid": "2.6.4 || 2.6.5"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "adminpanel"
+                },
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Adminpanel\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The TYPO3 admin panel provides a panel with additional functionality in the frontend (Debugging, Caching, Preview...)",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
             "name": "typo3/cms-backend",
             "version": "v9.5.15",
             "source": {
@@ -3194,6 +3258,104 @@
                 }
             ],
             "description": "Classes for the TYPO3 backend.",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-belog",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/belog.git",
+                "reference": "f4d16c9bb468c2f8b26c0a33698a9e25ace853b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/belog/zipball/f4d16c9bb468c2f8b26c0a33698a9e25ace853b4",
+                "reference": "f4d16c9bb468c2f8b26c0a33698a9e25ace853b4",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "belog"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Belog\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Displays backend log, both per page and system wide. Available as the module Tools>Log (system wide overview) and Web>Info/Log (page relative overview).",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-beuser",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/beuser.git",
+                "reference": "4985978c27ffb3fbaa4a37378c13e8e6c54926d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/beuser/zipball/4985978c27ffb3fbaa4a37378c13e8e6c54926d9",
+                "reference": "4985978c27ffb3fbaa4a37378c13e8e6c54926d9",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "beuser"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Beuser\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Backend user administration and overview. Allows you to compare the settings of users and verify their permissions and see who is online.",
             "homepage": "https://typo3.org",
             "time": "2020-03-31T08:40:25+00:00"
         },
@@ -3525,6 +3687,55 @@
             "time": "2020-03-31T08:40:25+00:00"
         },
         {
+            "name": "typo3/cms-felogin",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/felogin.git",
+                "reference": "a57e0aac1b0c4a8b4868af1979a95aa3b11243ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/felogin/zipball/a57e0aac1b0c4a8b4868af1979a95aa3b11243ac",
+                "reference": "a57e0aac1b0c4a8b4868af1979a95aa3b11243ac",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "felogin"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Felogin\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A template-based plugin to log in Website Users in the Frontend",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
             "name": "typo3/cms-filelist",
             "version": "v9.5.15",
             "source": {
@@ -3572,6 +3783,47 @@
                 }
             ],
             "description": "Listing of files in the directory",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-filemetadata",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/filemetadata.git",
+                "reference": "251be09c1a69f607056cfaa55a1a133042216957"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/filemetadata/zipball/251be09c1a69f607056cfaa55a1a133042216957",
+                "reference": "251be09c1a69f607056cfaa55a1a133042216957",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "filemetadata"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Add advanced metadata to File.",
             "homepage": "https://typo3.org",
             "time": "2020-03-31T08:40:25+00:00"
         },
@@ -3635,6 +3887,61 @@
             "time": "2020-03-31T08:40:25+00:00"
         },
         {
+            "name": "typo3/cms-form",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/form.git",
+                "reference": "62c69d3f2b63695230493c0d3d258fe7b86d67aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/form/zipball/62c69d3f2b63695230493c0d3d258fe7b86d67aa",
+                "reference": "62c69d3f2b63695230493c0d3d258fe7b86d67aa",
+                "shasum": ""
+            },
+            "require": {
+                "psr/http-message": "~1.0",
+                "symfony/expression-language": "^4.1",
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "typo3/cms-filelist": "Add context menu item for form files",
+                "typo3/cms-impexp": "Register imported form files"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "form"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Form\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Form Library, Plugin and Editor",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
             "name": "typo3/cms-frontend",
             "version": "v9.5.15",
             "source": {
@@ -3685,6 +3992,162 @@
                 }
             ],
             "description": "Classes for the frontend of TYPO3.",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-impexp",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/impexp.git",
+                "reference": "e61a385e6d940c8d6e01cff743f09d8e5137c5ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/impexp/zipball/e61a385e6d940c8d6e01cff743f09d8e5137c5ac",
+                "reference": "e61a385e6d940c8d6e01cff743f09d8e5137c5ac",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "impexp"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Impexp\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Import and Export of records from TYPO3 in a custom serialized format (.T3D) for data exchange with other TYPO3 systems.",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-indexed-search",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/indexed_search.git",
+                "reference": "78c21ee904f13abed6a2564d06c392f59d669f85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/indexed_search/zipball/78c21ee904f13abed6a2564d06c392f59d669f85",
+                "reference": "78c21ee904f13abed6a2564d06c392f59d669f85",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "typo3/cms-scheduler": "For garbage collection of search statistics"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "indexed_search"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\IndexedSearch\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Indexed Search Engine for TYPO3 pages, PDF-files, Word-files, HTML and text files. Provides a backend module for statistics of the indexer and a frontend plugin. Documentation can be found in the extension \"doc_indexed_search\".",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-info",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/info.git",
+                "reference": "ec3b4ec63f1c9942f6441cc6c8d4b8bc1043aac5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/info/zipball/ec3b4ec63f1c9942f6441cc6c8d4b8bc1043aac5",
+                "reference": "ec3b4ec63f1c9942f6441cc6c8d4b8bc1043aac5",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "replace": {
+                "typo3/cms-info-pagetsconfig": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "info"
+                },
+                "typo3/class-alias-loader": {
+                    "always-add-alias-loader": true,
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Info\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Shows various infos",
             "homepage": "https://typo3.org",
             "time": "2020-03-31T08:40:25+00:00"
         },
@@ -3744,6 +4207,110 @@
             "time": "2020-03-31T08:40:25+00:00"
         },
         {
+            "name": "typo3/cms-linkvalidator",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/linkvalidator.git",
+                "reference": "c0e185431c039a8c9680422c078a6231f25b190e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/linkvalidator/zipball/c0e185431c039a8c9680422c078a6231f25b190e",
+                "reference": "c0e185431c039a8c9680422c078a6231f25b190e",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15",
+                "typo3/cms-info": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "typo3/cms-scheduler": "Regular checks of links"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "linkvalidator"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Linkvalidator\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Link Validator checks the links in your website for validity. It can validate all kinds of links: internal, external and file links. Scheduler is supported to run Link Validator via Cron including the option to send status mails, if broken links were detected.",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-lowlevel",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/lowlevel.git",
+                "reference": "05e8ca1b6bc936c0abbf2d459c5d4326ffb24b33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/lowlevel/zipball/05e8ca1b6bc936c0abbf2d459c5d4326ffb24b33",
+                "reference": "05e8ca1b6bc936c0abbf2d459c5d4326ffb24b33",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "lowlevel"
+                },
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Lowlevel\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Enables the 'Config' and 'DB Check' modules for technical analysis of the system. This includes raw database search, checking relations, counting pages and records etc.",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
             "name": "typo3/cms-recordlist",
             "version": "v9.5.15",
             "source": {
@@ -3796,6 +4363,115 @@
                 }
             ],
             "description": "List of database-records",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-redirects",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/redirects.git",
+                "reference": "64e118f94b8add819fb8fe52cfa005f303ce72c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/redirects/zipball/64e118f94b8add819fb8fe52cfa005f303ce72c0",
+                "reference": "64e118f94b8add819fb8fe52cfa005f303ce72c0",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-backend": "9.5.15",
+                "typo3/cms-core": "9.5.15",
+                "typo3fluid/fluid": "^2.6.8"
+            },
+            "conflict": {
+                "typo3/cms": "*",
+                "typo3fluid/fluid": "2.6.4 || 2.6.5"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "redirects",
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Redirects\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Custom redirects in TYPO3.",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-reports",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/reports.git",
+                "reference": "f0601e40a42810697c493b0a4e7683830c3572cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/reports/zipball/f0601e40a42810697c493b0a4e7683830c3572cb",
+                "reference": "f0601e40a42810697c493b0a4e7683830c3572cb",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "typo3/cms-scheduler": "Determine system's status and send it via email"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "reports"
+                },
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Reports\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The reports module groups several system reports.",
             "homepage": "https://typo3.org",
             "time": "2020-03-31T08:40:25+00:00"
         },
@@ -3945,6 +4621,256 @@
                 }
             ],
             "description": "SEO features for TYPO3.",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-setup",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/setup.git",
+                "reference": "b3fde063e74e7666edeca4410f6cca256f8879f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/setup/zipball/b3fde063e74e7666edeca4410f6cca256f8879f6",
+                "reference": "b3fde063e74e7666edeca4410f6cca256f8879f6",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "setup"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Setup\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Allows users to edit a limited set of options for their user profile, eg. preferred language and their name and email address.",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-sys-note",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/sys_note.git",
+                "reference": "ae0a4d034add991b7142fda1843a70749aab3b58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/sys_note/zipball/ae0a4d034add991b7142fda1843a70749aab3b58",
+                "reference": "ae0a4d034add991b7142fda1843a70749aab3b58",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "sys_note"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\SysNote\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Records with messages which can be placed on any page and contain instructions or other information related to a page or section.",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-t3editor",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/t3editor.git",
+                "reference": "7fe594d0e8ba0f1af3dcef940c0563c7a9d8db20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/t3editor/zipball/7fe594d0e8ba0f1af3dcef940c0563c7a9d8db20",
+                "reference": "7fe594d0e8ba0f1af3dcef940c0563c7a9d8db20",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "t3editor"
+                },
+                "typo3/class-alias-loader": {
+                    "class-alias-maps": [
+                        "Migrations/Code/ClassAliasMap.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\T3editor\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JavaScript-driven editor with syntax highlighting and codecompletion. Based on CodeMirror.",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-tstemplate",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/tstemplate.git",
+                "reference": "70b80a529fa45ae5ffeaf322f74c8810564df075"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/tstemplate/zipball/70b80a529fa45ae5ffeaf322f74c8810564df075",
+                "reference": "70b80a529fa45ae5ffeaf322f74c8810564df075",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "tstemplate"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Tstemplate\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Framework for management of TypoScript template records for the CMS frontend.",
+            "homepage": "https://typo3.org",
+            "time": "2020-03-31T08:40:25+00:00"
+        },
+        {
+            "name": "typo3/cms-viewpage",
+            "version": "v9.5.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/viewpage.git",
+                "reference": "440b0f99827ff0a0d90fa3d0dc8033ed2aa641f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/viewpage/zipball/440b0f99827ff0a0d90fa3d0dc8033ed2aa641f3",
+                "reference": "440b0f99827ff0a0d90fa3d0dc8033ed2aa641f3",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "9.5.15"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "viewpage"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Viewpage\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Shows the frontend webpage inside the backend frameset.",
             "homepage": "https://typo3.org",
             "time": "2020-03-31T08:40:25+00:00"
         },
@@ -4202,16 +5128,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v2.16.2",
+            "version": "v2.16.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "c460a3cbaa58f983fe026cd52c45950bf61e9239"
+                "reference": "83baf823a33a1cbd5416c8626935cf3f843c10b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/c460a3cbaa58f983fe026cd52c45950bf61e9239",
-                "reference": "c460a3cbaa58f983fe026cd52c45950bf61e9239",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/83baf823a33a1cbd5416c8626935cf3f843c10b0",
+                "reference": "83baf823a33a1cbd5416c8626935cf3f843c10b0",
                 "shasum": ""
             },
             "require": {
@@ -4289,7 +5215,7 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "time": "2020-04-10T21:08:06+00:00"
+            "time": "2020-04-15T18:51:10+00:00"
         },
         {
             "name": "mikey179/vfsstream",
@@ -6462,16 +7388,16 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "aed98a490f9a8f78468232db345ab9cf606cf598"
+                "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/aed98a490f9a8f78468232db345ab9cf606cf598",
-                "reference": "aed98a490f9a8f78468232db345ab9cf606cf598",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
+                "reference": "ab2cb0b3b559010b75981b1bdce728da3ee90ad6",
                 "shasum": ""
             },
             "require": {
@@ -6479,7 +7405,7 @@
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
-                "vimeo/psalm": "<3.6.0"
+                "vimeo/psalm": "<3.9.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.36 || ^7.5.13"
@@ -6506,7 +7432,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2020-02-14T12:15:55+00:00"
+            "time": "2020-04-18T12:12:48+00:00"
         }
     ],
     "aliases": [],
