@@ -1,23 +1,51 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+############################
+### CUSTOM SUBCATEGORIES ###
+###########################
+# customsubcategory=100=Page Template
+# customsubcategory=110=LLL:EXT:resterland_bootstrap/Resources/Private/Language/locallang.xlf:constant_cats.logo
+# customsubcategory=111=LLL:EXT:resterland_bootstrap/Resources/Private/Language/locallang.xlf:constant_cats.favicon
+# customsubcategory=120=Meta Settings
+# customsubcategory=150=Configuration
+# customsubcategory=160=LLL:EXT:resterland_bootstrap/Resources/Private/Language/locallang.xlf:constant_cats.theme
+# customsubcategory=166=Section Footer
+# customsubcategory=167=Section Meta
+# customsubcategory=168=Section Language
+# customsubcategory=169=Section Copyright
+# customsubcategory=180=Tracking
 
 ############
 ### PAGE ###
 ############
 page {
     logo {
+        # cat=Resterland Bootstrap Settings: basic/110/100; type=string; label=LLL:EXT:resterland_bootstrap/Resources/Private/Language/locallang.xlf:constant_cats.logo.file
         file = EXT:resterland_bootstrap/Resources/Public/Images/logo.svg
         fileInverted = EXT:resterland_bootstrap/Resources/Public/Images/logo-inverted.svg
+        # cat=Resterland Bootstrap Settings: basic/110/110; type=int+; label=LLL:EXT:resterland_bootstrap/Resources/Private/Language/locallang.xlf:constant_cats.logo.height
         height = 52
+        # cat=Resterland Bootstrap Settings: basic/110/120; type=int+; label=LLL:EXT:resterland_bootstrap/Resources/Private/Language/locallang.xlf:constant_cats.logo.width
         width = 192
+        # cat=Resterland Bootstrap Settings: basic/110/130; type=string; label=LLL:EXT:resterland_bootstrap/Resources/Private/Language/locallang.xlf:constant_cats.logo.alt
         alt = Resterland Bootstrap
+        # cat=Resterland Settings: basic/110/140; type=string; label=LLL:EXT:resterland_bootstrap/Resources/Private/Language/locallang.xlf:constant_cats.logo.linktitle
         linktitle = Resterland Bootstrap
     }
     favicon {
-        # cat=Resterland Settings: layout/111/100; type=options[Default=Default, Resterland=Resterland, Bali Entdecken=Balientdecken, Flores Entdecken=Floresentdecken, Pancasila=Indonesienentdecken, Roesten=Roesten, VPT MOB=Vptmob]; label=LLL:EXT:resterland/Resources/Private/Language/locallang.xlf:constant_cats.favicon.switch
+        # cat=Resterland Bootstrap Settings: layout/111/100; type=options[Default=Default, Resterland=Resterland, Bali Entdecken=Balientdecken, Flores Entdecken=Floresentdecken, Pancasila=Indonesienentdecken, Roesten=Roesten, VPT MOB=Vptmob]; label=LLL:EXT:resterland_bootstrap/Resources/Private/Language/locallang.xlf:constant_cats.favicon.switch
         switch = Default
+    }
+
+    theme {
+        # cat=Resterland Bootstrap Settings: layout/160/100; type=options[Default=Theme, Resterland=Resterland, Slate=Slate]; label=LLL:EXT:resterland_bootstrap/Resources/Private/Language/locallang.xlf:constant_cats.theme.switch
+        switch = Theme
+        copyright {
+            enable = 1
+        }
     }
     fluidtemplate {
         layoutRootPath = EXT:resterland_bootstrap/Resources/Private/Layouts/Page/
