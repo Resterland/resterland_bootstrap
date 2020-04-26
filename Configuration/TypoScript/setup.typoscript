@@ -117,13 +117,11 @@ config {
 ##<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TypoScript/Main/Setup/Page.typoscript">
 ##<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TypoScript/Main/Setup/Config.typoscript">
 
-[applicationContext == "Development"]
-    config {
-        admPanel = 1
-        compressJs = 0
-        compressCss = 0
-        concatenateJs = 0
-        concatenateCss = 0
-        contentObjectExceptionHandler = 0
-    }
-[END]
+config {
+    admPanel = 1
+    compressJs = 0
+    compressCss = 0
+    concatenateJs = 0
+    concatenateCss = 0
+    contentObjectExceptionHandler = 0
+}
