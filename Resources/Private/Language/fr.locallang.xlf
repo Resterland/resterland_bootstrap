@@ -1,45 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2020-04-06UTC09:26:300">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2020-04-06UTC09:26:300">
         <header>
             <authorName>Roland Fuhrer</authorName>
-            <authorEmail>roland@rlocallang.xlfesterland.ch</authorEmail>
+            <authorEmail>roland@resterland.ch</authorEmail>
         </header>
         <body>
 
             <!-- Logo Settings Header -->
             <trans-unit id="constant_cats.logo" xml:space="preserve">
                 <source>Logo</source>
+                <target>Logo</target>
             </trans-unit>
 
             <!-- Logo File Path -->
             <trans-unit id="constant_cats.logo.file" xml:space="preserve">
                 <source>Path to the Logo: Choose one of the list or submit your own</source>
+                <target>Chemin vers le logo: Choisissez-en un dans la liste ou entrez le chemin d'accès désiré</target>
             </trans-unit>
 
             <!-- Logo Height -->
             <trans-unit id="constant_cats.logo.height" xml:space="preserve">
                 <source>Height: will not be resized!</source>
+                <target>Apogée</target>
             </trans-unit>
 
             <!-- Logo Width -->
             <trans-unit id="constant_cats.logo.width" xml:space="preserve">
                 <source>Width: will not be resized!</source>
+                <target>Largeur</target>
             </trans-unit>
 
             <!-- Logo Alt Text -->
             <trans-unit id="constant_cats.logo.alt" xml:space="preserve">
                 <source>Alternative text: Text of the alt attribute of the logo image (default: "Resterland WebAtelier")</source>
+                <target>Texte alternatif: Texte pour l'attribut alt (défaut: "Resterland WebAtelier")</target>
             </trans-unit>
 
             <!-- Logo Link Title -->
             <trans-unit id="constant_cats.logo.linktitle" xml:space="preserve">
                 <source>Link Title: Text of the link attribute of the logo image (default: "ResterlandWebAtelierLogo")</source>
+                <target>Titre du lien: Titre de l'attribut link (défaut: "Resterland WebAtelier")</target>
             </trans-unit>
 
             <!-- Favicon -->
             <trans-unit id="constant_cats.favicon" xml:space="preserve">
                 <source>Favicon</source>
+                <target>Favicon Icon</target>
             </trans-unit>
 
             <!-- Favicon Switch -->
@@ -60,16 +67,19 @@
             <!-- Theme Copyright runningWith -->
             <trans-unit id="theme.copyright.runningWith" xml:space="preserve">
                 <source>Running with</source>
+                <target>Courir avec</target>
             </trans-unit>
 
             <!-- Theme Copyright and -->
             <trans-unit id="theme.copyright.and" xml:space="preserve">
                 <source>and</source>
+                <target>et</target>
             </trans-unit>
 
             <!-- Theme Copyright tweaked -->
             <trans-unit id="theme.copyright.tweaked" xml:space="preserve">
                 <source>Tweaked by</source>
+                <target>Mis au point par</target>
             </trans-unit>
 
             <!-- News Plugin Settings -->
@@ -80,21 +90,27 @@
             <!-- cookieconsent -->
             <trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>
+                <target state="translated">Ce site utilise des cookies!</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.message">
                 <source>This website uses cookies to ensure you get the best experience on our website.</source>
+                <target state="translated">Les cookies sont utilisés pour vous permettre d'utiliser notre site Internet de manière optimale.</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.dismiss">
                 <source>Got it!</source>
+                <target state="translated">D'accord!</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.allow">
                 <source>Allow cookies</source>
+                <target state="translated">Accepter les cookies</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.deny">
                 <source>Decline</source>
+                <target state="translated">Refuser</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.link">
                 <source>Learn more</source>
+                <target state="translated">En savoir plus</target>
             </trans-unit>
         </body>
     </file>

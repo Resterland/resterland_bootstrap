@@ -1,5 +1,8 @@
 <?php
+
 defined('TYPO3_MODE') || die();
+
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 call_user_func(function()
 {
@@ -11,7 +14,7 @@ call_user_func(function()
     /**
      * Default TypoScript for ResterlandBootstrap
      */
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    ExtensionManagementUtility::addStaticFile(
         $extensionKey,
         'Configuration/TypoScript',
         'Resterland Bootstrap'

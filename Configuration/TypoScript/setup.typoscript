@@ -6,9 +6,57 @@
 ##############
 #### PAGE ####
 ##############
+page = PAGE
 page {
+
+    shortcutIcon = EXT:resterland_bootstrap/Resources/Public/Icons/Favicons/{$page.favicon.switch}/favicon.ico
+
+    10 = FLUIDTEMPLATE
+    10 {
+
+        templateRootPaths {
+            0 = EXT:bootstrap_package/Resources/Private/Templates/Page/
+            1 = {$page.fluidtemplate.templateRootPath}
+        }
+
+        partialRootPaths {
+            0 = EXT:bootstrap_package/Resources/Private/Partials/Page/
+            1 = {$page.fluidtemplate.partialRootPath}
+        }
+
+        layoutRootPaths {
+            0 = EXT:bootstrap_package/Resources/Private/Layouts/Page/
+            1 = {$page.fluidtemplate.layoutRootPath}
+        }
+
+        ################
+        ### SETTINGS ###
+        ################
+        settings {
+            logo {
+                file = EXT:resterland_bootstrap/Resources/Public/Images/Logos/{$page.logo.file}
+                fileInverted = EXT:resterland_bootstrap/Resources/Public/Images/Logos/{$page.logo.fileInverted}
+                height = {$page.logo.height}
+                width = {$page.logo.width}
+                linktitle = {$page.logo.linktitle}
+            }
+
+            felogin.inmenu = {$styles.content.loginform.inmenu}
+        }
+
+        #################
+        ### VARIABLES ###
+        #################
+        variables {
+            sitename = TEXT
+            sitename.data = GLOBAL:TYPO3_CONF_VARS|SYS|sitename
+        }
+    }
+
     includeCSS {
-        theme = EXT:resterland_bootstrap/Resources/Public/Scss/Theme/theme.scss
+        theme >
+        mystyle = EXT:resterland/Resources/Public/Scss/Themes/{$page.theme.switch}/theme.scss
+        custom = EXT:resterland/Resources/Public/Css/custom.css
     }
 
     includeJSLibs {
@@ -28,9 +76,54 @@ page {
     }
 }
 
+###############
+#### PRINT ####
+###############
+
+print = PAGE
+print.typeNum = 98
+
+################
+#### CONFIG ####
+################
+config {
+    pageTitleFirst = 0
+    pageTitleSeparator = -
+    pageTitleSeparator.noTrimWrap = | | |
+    uniqueLinkVars = 1
+    # linkVars = L(init)
+    linkVars = L(int),framework
+    typolinkEnableLinksAcrossDomains = {$config.typolinkEnableLinksAcrossDomains}
+    renderCharset = utf-8
+    metaCharset = utf-8
+    doctype = html5
+    inlineStyle2TempFile = 1
+    debug = 0
+    cache_period = 86400
+    disablePrefixComment = 1
+    index_enable = 1
+    index_externals = 1
+    index_metatags = 1
+    headerComment = {$config.headerComment}
+
+    spamProtectEmailAddresses = ascii
+    spamProtectEmailAddresses_atSubst = (at)
+}
+
 #######################
 #### MAIN SETTINGS ####
 #######################
 
 ##<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TypoScript/Main/Setup/Page.typoscript">
 ##<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TypoScript/Main/Setup/Config.typoscript">
+
+[applicationContext == "Development"]
+    config {
+        admPanel = 1
+        compressJs = 0
+        compressCss = 0
+        concatenateJs = 0
+        concatenateCss = 0
+        contentObjectExceptionHandler = 0
+    }
+[END]

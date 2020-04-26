@@ -1,75 +1,88 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2020-04-06UTC09:26:300">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2020-04-06UTC09:26:300">
         <header>
             <authorName>Roland Fuhrer</authorName>
-            <authorEmail>roland@rlocallang.xlfesterland.ch</authorEmail>
+            <authorEmail>roland@resterland.ch</authorEmail>
         </header>
         <body>
 
             <!-- Logo Settings Header -->
             <trans-unit id="constant_cats.logo" xml:space="preserve">
                 <source>Logo</source>
+                <target>Logo</target>
             </trans-unit>
 
             <!-- Logo File Path -->
             <trans-unit id="constant_cats.logo.file" xml:space="preserve">
                 <source>Path to the Logo: Choose one of the list or submit your own</source>
+                <target>Pfad zum Logo: Wähle eines aus der Liste oder gib den gewünschten Pfad an</target>
             </trans-unit>
 
             <!-- Logo Height -->
             <trans-unit id="constant_cats.logo.height" xml:space="preserve">
                 <source>Height: will not be resized!</source>
+                <target>Höhe</target>
             </trans-unit>
 
             <!-- Logo Width -->
             <trans-unit id="constant_cats.logo.width" xml:space="preserve">
                 <source>Width: will not be resized!</source>
+                <target>Breite</target>
             </trans-unit>
 
             <!-- Logo Alt Text -->
             <trans-unit id="constant_cats.logo.alt" xml:space="preserve">
                 <source>Alternative text: Text of the alt attribute of the logo image (default: "Resterland WebAtelier")</source>
+                <target>Alternativer Text: Text für das alt-Attribut (Standard: "Resterland WebAtelier")</target>
             </trans-unit>
 
             <!-- Logo Link Title -->
             <trans-unit id="constant_cats.logo.linktitle" xml:space="preserve">
                 <source>Link Title: Text of the link attribute of the logo image (default: "ResterlandWebAtelierLogo")</source>
+                <target>Link Titel: Titel für das link-Attribut (Standard: "Resterland WebAtelier")</target>
             </trans-unit>
 
             <!-- Favicon -->
             <trans-unit id="constant_cats.favicon" xml:space="preserve">
                 <source>Favicon</source>
+                <target>Favicon Icon</target>
             </trans-unit>
 
             <!-- Favicon Switch -->
             <trans-unit id="constant_cats.favicon.switch" xml:space="preserve">
                 <source>Favicon Switch: Choose your favorite icon</source>
+                <target>Favicon Auswahl: Wähle dein favoriten Icon</target>
             </trans-unit>
 
             <!-- Theme - Page Layout -->
             <trans-unit id="constant_cats.theme" xml:space="preserve">
                 <source>Theme - Page Layout</source>
+                <target>Thema - Seitenlayout</target>
             </trans-unit>
 
             <!-- Theme Switch -->
             <trans-unit id="constant_cats.theme.switch" xml:space="preserve">
                 <source>Theme Switch: Choose your favorite theme</source>
+                <target>Themenwahl: Wähle dein Lieblingsthema</target>
             </trans-unit>
 
             <!-- Theme Copyright runningWith -->
             <trans-unit id="theme.copyright.runningWith" xml:space="preserve">
                 <source>Running with</source>
+                <target>Läuft mit</target>
             </trans-unit>
 
             <!-- Theme Copyright and -->
             <trans-unit id="theme.copyright.and" xml:space="preserve">
                 <source>and</source>
+                <target>und</target>
             </trans-unit>
 
             <!-- Theme Copyright tweaked -->
             <trans-unit id="theme.copyright.tweaked" xml:space="preserve">
                 <source>Tweaked by</source>
+                <target>optimiert von</target>
             </trans-unit>
 
             <!-- News Plugin Settings -->
@@ -80,21 +93,27 @@
             <!-- cookieconsent -->
             <trans-unit id="cookieconsent.common.header">
                 <source>Cookies used on the website!</source>
+                <target state="translated">Diese Webseite benutzt Cookies!</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.message">
                 <source>This website uses cookies to ensure you get the best experience on our website.</source>
+                <target state="translated">Um Ihnen eine optimale Nutzung unserer Website zu ermöglichen, werden Cookies eingesetzt.</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.dismiss">
                 <source>Got it!</source>
+                <target state="translated">Alles klar!</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.allow">
                 <source>Allow cookies</source>
+                <target state="translated">Cookies erlauben</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.deny">
                 <source>Decline</source>
+                <target state="translated">Ablehnen</target>
             </trans-unit>
             <trans-unit id="cookieconsent.common.link">
                 <source>Learn more</source>
+                <target state="translated">Mehr erfahren</target>
             </trans-unit>
         </body>
     </file>
