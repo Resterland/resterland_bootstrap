@@ -54,9 +54,7 @@ page {
     }
 
     includeCSS {
-        theme >
-        mystyle = EXT:resterland_bootstrap/Resources/Public/Scss/Themes/{$page.theme.switch}/theme.scss
-        custom = EXT:resterland_bootstrap/Resources/Public/Css/custom.css
+        theme = EXT:resterland_bootstrap/Resources/Public/Scss/Themes/Theme/theme.scss
     }
 
     includeJSLibs {
