@@ -5,6 +5,7 @@ mod {
     web_layout {
         BackendLayouts {
             default {
+                title >
                 title = LLL:EXT:resterland_bootstrap/Resources/Private/Language/locallang_be.xlf:backend_layout.default
                 config {
                     backend_layout {
