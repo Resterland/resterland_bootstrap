@@ -20,7 +20,7 @@ class BrandingService
     /**
      * @var string
      */
-    const EXT_KEY = 'bootstrap_package';
+    const EXT_KEY = 'resterland_bootstrap';
 
     /**
      * @param string $extension
@@ -34,22 +34,22 @@ class BrandingService
             $backendConfiguration = $extensionConfiguration->get('backend');
 
             if (!isset($backendConfiguration['loginLogo']) || empty(trim($backendConfiguration['loginLogo']))) {
-                $backendConfiguration['loginLogo'] = 'EXT:resterland/Resources/Public/Images/Logos/Resterland/RL_text_blue-150x32.png';
+                $backendConfiguration['loginLogo'] = 'EXT:resterland_bootstrap/Resources/Public/Images/Logos/Resterland/RL_text_blue-150x32.png';
             }
             if (!isset($backendConfiguration['loginHighlightColor']) || empty(trim($backendConfiguration['loginHighlightColor']))) {
                 $backendConfiguration['loginHighlightColor'] = '#b84c21';
             }
             if (!isset($backendConfiguration['loginBackgroundImage']) || empty(trim($backendConfiguration['loginBackgroundImage']))) {
-                $backendConfiguration['loginBackgroundImage'] = 'EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.svg';
+                $backendConfiguration['loginBackgroundImage'] = 'EXT:resterland_bootstrap/Resources/Public/Images/Logos/Resterland/ResterlandLogo.svg';
             }
             if (!isset($backendConfiguration['loginFootnote']) || empty(trim($backendConfiguration['loginFootnote']))) {
                 $backendConfiguration['loginFootnote'] = 'Welcome To ResterLand Development Project';
             }
             if (!isset($backendConfiguration['backendLogo']) || empty(trim($backendConfiguration['backendLogo']))) {
-                $backendConfiguration['backendLogo'] = 'EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.png';
+                $backendConfiguration['backendLogo'] = 'EXT:resterland_bootstrap/Resources/Public/Images/Logos/Resterland/ResterlandLogo.png';
             }
             if (!isset($backendConfiguration['backendFavicon']) || empty(trim($backendConfiguration['backendFavicon']))) {
-                $backendConfiguration['backendFavicon'] = 'EXT:resterland/Resources/Public/Icons/Favicons/Default/favicon.ico';
+                $backendConfiguration['backendFavicon'] = 'EXT:resterland_bootstrap/Resources/Public/Icons/Favicons/Default/favicon.ico';
             }
 
             $extensionConfiguration->set('backend', '', $backendConfiguration);
