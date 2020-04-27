@@ -2,24 +2,20 @@
 ### Backend overrides ###
 #########################
 
-login {
-    # cat=Login; type=string; label=Login Logo: If set, this logo will be used instead of...
-    loginLogo = EXT:resterland/Resources/Public/Images/Logos/Resterland/RL_text_blue-150x32.png
+# cat=Login; type=string; label=Login Logo: If set, this logo will be used instead of...
+loginLogo = EXT:resterland/Resources/Public/Images/Logos/Resterland/RL_text_blue-150x32.png
 
-    # cat=Login; type=string; label=Login Highlight Color
-    loginHighlightColor = #b84c21
+# cat=Login; type=string; label=Login Highlight Color
+loginHighlightColor = #b84c21
 
-    # cat=Login; type=string; label=Login Background Image
-    loginBackgroundImage = EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.svg
+# cat=Login; type=string; label=Login Background Image
+loginBackgroundImage = EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.svg
 
-    # cat=Login; type=string; label=Login Footnote
-    loginFootnote = Welcome To ResterLand Development Project
-}
+# cat=Login; type=string; label=Login Footnote
+loginFootnote = Welcome To ResterLand Development Project
 
-backend {
-    # cat=Backend; type=string; label=Backend Logo: If set, this logo will be used instead of...
-    backendLogo = EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.png
+# cat=Backend; type=string; label=Backend Logo: If set, this logo will be used instead of...
+backendLogo = EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.png
 
-    # cat=Backend; type=string; label=Backend Favicon: If set, this logo will be used instead of...
-    backendFavicon = EXT:resterland/Resources/Public/Icons/Favicons/Default/favicon.ico
-}
+# cat=Backend; type=string; label=Backend Favicon: If set, this logo will be used instead of...
+backendFavicon = EXT:resterland/Resources/Public/Icons/Favicons/Default/favicon.ico
