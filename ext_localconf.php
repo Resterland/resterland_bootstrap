@@ -24,4 +24,9 @@ ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:E
 // TCEFORM
 ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TsConfig/Page/TCEFORM.tsconfig">');
 
+/***************
+ * Register "resterland" as global fluid namespace
+ */
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['resterland'][] = 'Resterland\\ResterlandBootstrap\\ViewHelpers';
+
 
