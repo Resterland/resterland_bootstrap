@@ -17,7 +17,6 @@ login {
 }
 
 backend {
-
     # cat=Backend; type=string; label=Backend Logo: If set, this logo will be used instead of...
     backendLogo = EXT:resterland/Resources/Public/Images/Logos/Resterland/ResterlandLogo.png
 
