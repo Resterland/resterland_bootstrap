@@ -20,7 +20,7 @@ class BrandingService
     /**
      * @var string
      */
-    const EXT_KEY = 'resterland_bootstrap';
+    const EXT_KEY = 'bootstrap_package';
 
     /**
      * @param string $extension
