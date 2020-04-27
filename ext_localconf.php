@@ -24,16 +24,6 @@ ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:E
 // TCEFORM
 ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:resterland_bootstrap/Configuration/TsConfig/Page/TCEFORM.tsconfig">');
 
-/**
- * Add backend styling
- */
-$signalSlotDispatcher->connect(
-    \TYPO3\CMS\Extensionmanager\Service\ExtensionManagementService::class,
-    'hasInstalledExtensions',
-    \Resterland\ResterlandBootstrap\Service\BrandingService::class,
-    'setBackendStyling'
-);
-
 /***************
  * Register "resterland" as global fluid namespace
  */
