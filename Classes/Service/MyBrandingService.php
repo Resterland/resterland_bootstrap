@@ -13,9 +13,9 @@ use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
- * BrandingService
+ * MyBrandingService
  */
-class BrandingService
+class MyBrandingService
 {
     /**
      * @var string
