@@ -38,5 +38,9 @@ if (TYPO3_MODE === 'BE') {
     );
 }
 
+/***************
+ * Register "resterland" as global fluid namespace
+ */
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['resterland'][] = 'Resterland\\ResterlandBootstrap\\ViewHelpers';
 
 
