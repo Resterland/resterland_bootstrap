@@ -1,21 +1,22 @@
 ###################
 ### LOGINSCREEN ###
 ###################
+backend {
+    # cat=Login; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginLogo
+    loginLogo = EXT:resterland_bootstrap/Resources/Public/Images/Logos/Resterland/RL_text_blue-150x32.png
 
-# cat=Login; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginLogo
-loginLogo = EXT:resterland_bootstrap/Resources/Public/Images/Logos/Resterland/RL_text_blue-150x32.png
+    # cat=Login; type=color; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginHighlightColor
+    loginHighlightColor = #b84c21
 
-# cat=Login; type=color; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginHighlightColor
-loginHighlightColor = #b84c21
+    # cat=Login; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginBackgroundImage
+    loginBackgroundImage = EXT:resterland_bootstrap/Resources/Public/Images/Logos/Resterland/ResterlandLogo.svg
 
-# cat=Login; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginBackgroundImage
-loginBackgroundImage = EXT:resterland_bootstrap/Resources/Public/Images/Logos/Resterland/ResterlandLogo.svg
+    # cat=Login; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginFootnote
+    loginFootnote = Welcome To ResterLand Development Project
 
-# cat=Login; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.loginFootnote
-loginFootnote = Welcome To ResterLand Development Project
+    # cat=Backend; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.backendLogo
+    backendLogo = EXT:resterland_bootstrap/Resources/Public/Images/Logos/Resterland/ResterlandLogo.png
 
-# cat=Backend; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.backendLogo
-backendLogo = EXT:resterland_bootstrap/Resources/Public/Images/Logos/Resterland/ResterlandLogo.png
-
-# cat=Backend; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.backendFavicon
-backendFavicon = EXT:resterland_bootstrap/Resources/Public/Icons/Favicons/Default/favicon.ico
+    # cat=Backend; type=string; label=LLL:EXT:backend/Resources/Private/Language/locallang.xlf:config.backendFavicon
+    backendFavicon = EXT:resterland_bootstrap/Resources/Public/Icons/Favicons/Default/favicon.ico
+}
