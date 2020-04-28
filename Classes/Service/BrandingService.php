@@ -13,14 +13,14 @@ use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
- * MyBrandingService
+ * BrandingService
  */
-class MyBrandingService
+class BrandingService
 {
     /**
      * @var string
      */
-    const EXT_KEY = 'resterland_bootstrap';
+    const EXT_KEY = 'bootstrap_package';
 
     /**
      * @param string $extension
