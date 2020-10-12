@@ -29,16 +29,16 @@
   ],
   "require": {
     "helhum/typo3-secure-web": "^0.2",
-    "helhum/typo3-console": "^5.7",
-    "typo3/cms-core": "^9.5",
-    "typo3/cms-rte-ckeditor": "^9.5",
-    "typo3/cms-fluid-styled-content": "^9.5",
-    "causal/image_autoresize": "^1.9"
+    "helhum/typo3-console": "^6.3",
+    "typo3/cms-core": "^10.4",
+    "typo3/cms-rte-ckeditor": "^10.4",
+    "typo3/cms-fluid-styled-content": "^10.4",
+    "causal/image_autoresize": "^2.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",
-    "friendsofphp/php-cs-fixer": "^2.0",
-    "typo3/testing-framework": "^4.11"
+    "friendsofphp/php-cs-fixer": "^2",
+    "typo3/testing-framework": "^6"
   },
   "autoload": {
     "psr-4": {
@@ -56,7 +56,7 @@
   },
   "config": {
     "platform": {
-      "php": "7.2"
+      "php": "7.4"
     },
     "optimize-autoloader": true
   },
